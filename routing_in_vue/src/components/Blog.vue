@@ -3,7 +3,7 @@
     <div class="blog__post" v-for="(post, index) in posts" :key="index">
       <img :src="post.image" alt="">
       <h3>{{ post.title }}</h3>
-      <router-link :to="{name: 'Post', params: {ids: index}}">Detailed</router-link>
+      <router-link :to="{name: 'Post', params: {id: index}}">Detailed</router-link>
     </div>
   </div>
 </template>
