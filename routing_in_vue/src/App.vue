@@ -1,7 +1,14 @@
 <template>
-  <div id="app">
-    <Search></Search>
-    <Results></Results>
+    <div id="app">
+    <header>
+      <div class="logo">
+        <img src="https://raw.githubusercontent.com/GitHubTochkaDev/vuejs-tutorials/vuex/src/assets/logo.png" alt="">
+      </div>
+      <search></search>
+    </header>
+    <main>
+      <results></results>
+    </main>
   </div>
 </template>
 
