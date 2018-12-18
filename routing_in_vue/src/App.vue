@@ -2,7 +2,11 @@
     <div id="app">
     <header>
       <div class="logo">
-        <img src="https://raw.githubusercontent.com/GitHubTochkaDev/vuejs-tutorials/vuex/src/assets/logo.png" alt="">
+        <img 
+        src="https://raw.githubusercontent.com/GitHubTochkaDev/vuejs-tutorials/vuex/src/assets/logo.png" 
+        alt=""
+        @click="$store.dispatch('loginLogout')"
+        >
       </div>
       <search></search>
     </header>

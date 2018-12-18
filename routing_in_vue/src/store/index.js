@@ -32,6 +32,26 @@ const store = new Vuex.Store({
             console.log(err)
         })
 
+    },
+    loginLogout ({commit}) {
+        const options = {
+            params : {
+                action:"query",
+                meta:"tokens",
+                type:"login",
+                format:"json",
+                origin: 'http://192.168.1.130:8082',
+                withCredentials: true
+            },
+            
+        }
+
+        const getToken = 'https://mediawiki.org/w/api.php'
+        axios.post(getToken, options)
+        .then(res => console.log(res))
+        // const url = 'https://en.wikipedia.org/w/api.php'
+        
+        // commit('loginLogout')
     }
   },
   mutations: {
