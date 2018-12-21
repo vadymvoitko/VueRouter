@@ -1,6 +1,5 @@
 <template>
-    <div id="app">
-    
+  <div id="app">
   </div>
 </template>
 
@@ -9,8 +8,11 @@ export default {
   name: 'app',
   data () {
     return {
-      
+      cars: []
     }
+  },
+  created () {
+    console.log(this.axios)
   }
 }
 </script>
